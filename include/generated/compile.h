@@ -1,7 +1,7 @@
-/* This file is auto generated, version 5 */
+/* This file is auto generated, version 3 */
 /* SMP PREEMPT */
 #define UTS_MACHINE "arm"
-#define UTS_VERSION "#5 SMP PREEMPT Fri Jun 28 10:24:26 IST 2013"
-#define LINUX_COMPILE_BY "kar"
-#define LINUX_COMPILE_HOST "Android-ThinkPad-T400"
-#define LINUX_COMPILER "gcc version 4.7.4 20130603 (prerelease) (crosstool-NG hg+default-81ead21f86c2 - Linaro GCC 2013.06) "
+#define UTS_VERSION "#3 SMP PREEMPT Sun Dec 30 22:18:48 EST 2012"
+#define LINUX_COMPILE_BY "koo"
+#define LINUX_COMPILE_HOST "koo-desktop"
+#define LINUX_COMPILER "gcc version 4.4.3 (GCC) "
