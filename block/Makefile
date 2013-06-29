@@ -7,7 +7,6 @@ obj-$(CONFIG_BLOCK) := elevator.o blk-core.o blk-tag.o blk-sysfs.o \
 			blk-exec.o blk-merge.o blk-softirq.o blk-timeout.o \
 			blk-iopoll.o blk-lib.o ioctl.o genhd.o scsi_ioctl.o
 
-<<<<<<< HEAD
 obj-$(CONFIG_BLK_DEV_BSG)	+= bsg.o
 obj-$(CONFIG_BLK_CGROUP)	+= blk-cgroup.o
 obj-$(CONFIG_BLK_DEV_THROTTLING)	+= blk-throttle.o
@@ -15,7 +14,6 @@ obj-$(CONFIG_IOSCHED_NOOP)	+= noop-iosched.o
 obj-$(CONFIG_IOSCHED_DEADLINE)	+= deadline-iosched.o
 obj-$(CONFIG_IOSCHED_CFQ)	+= cfq-iosched.o
 obj-$(CONFIG_IOSCHED_BFQ)	+= bfq-iosched.o
-=======
 obj-$(CONFIG_BLK_DEV_BSG)        += bsg.o
 obj-$(CONFIG_BLK_CGROUP)         += blk-cgroup.o
 obj-$(CONFIG_BLK_DEV_THROTTLING) += blk-throttle.o
@@ -26,7 +24,6 @@ obj-$(CONFIG_IOSCHED_NOOP)       += noop-iosched.o
 obj-$(CONFIG_IOSCHED_ROW)        += row-iosched.o
 obj-$(CONFIG_IOSCHED_SIO)        += sio-iosched.o
 obj-$(CONFIG_IOSCHED_VR)         += vr-iosched.o
->>>>>>> 08ae07a... Added SIO and V(R) I/O schedulers
 
 obj-$(CONFIG_BLOCK_COMPAT)       += compat_ioctl.o
 obj-$(CONFIG_BLK_DEV_INTEGRITY)  += blk-integrity.o

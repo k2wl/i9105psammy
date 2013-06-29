@@ -15,8 +15,6 @@ config IOSCHED_BFQ
 	  applications.  If compiled built-in (saying Y here), BFQ can
 	  be configured to support hierarchical scheduling.
 
-<<<<<<< HEAD
-=======
 config CGROUP_BFQIO
 	bool "BFQ hierarchical scheduling support"
 	depends on CGROUPS && IOSCHED_BFQ=y
@@ -26,7 +24,6 @@ config CGROUP_BFQIO
 	  filesystem interface.  The name of the subsystem will be
 	  bfqio.
 
->>>>>>> 08ae07a... Added SIO and V(R) I/O schedulers
 config IOSCHED_CFQ
 	tristate "CFQ I/O scheduler"
 	# If BLK_CGROUP is a module, CFQ has to be built as module.
@@ -103,13 +100,11 @@ choice
 	  Select the I/O scheduler which will be used by default for all
 	  block devices.
 
-<<<<<<< HEAD
 	config DEFAULT_DEADLINE
 		bool "Deadline" if IOSCHED_DEADLINE=y
-=======
+
 	config DEFAULT_BFQ
 		bool "BFQ" if IOSCHED_BFQ=y
->>>>>>> 08ae07a... Added SIO and V(R) I/O schedulers
 
 	config DEFAULT_CFQ
 		bool "CFQ" if IOSCHED_CFQ=y
@@ -133,11 +128,8 @@ endchoice
 
 config DEFAULT_IOSCHED
 	string
-<<<<<<< HEAD
 	default "deadline" if DEFAULT_DEADLINE
 	default "cfq" if DEFAULT_CFQ
-=======
->>>>>>> 08ae07a... Added SIO and V(R) I/O schedulers
 	default "bfq" if DEFAULT_BFQ
 	default "cfq" if DEFAULT_CFQ
 	default "deadline" if DEFAULT_DEADLINE
